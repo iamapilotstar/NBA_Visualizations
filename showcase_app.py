@@ -11,7 +11,7 @@ st.markdown(
         )
 
 st.markdown(
-            "⬇️ **Most insights are below the image so kindly scroll down to view the insights** ⬇️"
+            "⬇️ **Most insights are below the image so kindly scroll/swipe down to view the insights** ⬇️"
         )
 
 
