@@ -6,6 +6,10 @@ st.set_page_config(page_title="NBA Shot Prediction - Visuals", layout="wide")
 
 st.title("🏀 NBA Shot Prediction - Model Insights & Visualizations")
 
+st.markdown(
+            "⬅️ **Swipe left/right to explore more insights** ➡️"
+        )
+
 image_paths = {
     "Height vs Shot Distance": "Height vs Shot distance.png",
     "Weight vs Shot Distance": "Weight vs Shot distance.png",
