@@ -30,7 +30,7 @@ for tab, key in zip([tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10
 
         if os.path.exists(image_paths[key]):
             image = Image.open(image_paths[key])
-            st.image(image, width=600)
+            st.image(image, use_container_width=300)
         else:
             st.error("⚠️ Image file not found! Please ensure the file exists in the correct directory.")
 
