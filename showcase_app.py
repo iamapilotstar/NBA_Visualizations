@@ -74,7 +74,7 @@ elif selected_image == "Feature Importance":
 st.subheader(selected_image)
 if os.path.exists(image_paths[selected_image]):
     image = Image.open(image_paths[selected_image])
-    st.image(image, use_column_width=True)
+    st.image(image, use_container_width=True)
 else:
     st.error("⚠️ Image file not found! Please ensure the file exists in the correct directory.")
 
