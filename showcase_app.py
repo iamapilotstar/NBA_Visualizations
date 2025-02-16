@@ -4,7 +4,7 @@ from PIL import Image
 
 st.set_page_config(page_title="NBA Shot Prediction - Visuals", layout="wide")
 
-st.title("🏀 NBA Shot Prediction - Model Insights & Visualizations")
+st.title("🏀 NBA Shot Prediction - Insights & Visualizations")
 
 image_paths = {
     "Height vs Shot Distance": "Height vs Shot distance.png",
