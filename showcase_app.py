@@ -25,31 +25,6 @@ image_paths = {
     "Feature Importance": "feature_importance.png"
 }
 
-st.markdown(
-    """
-    <style>
-        div[data-testid="stTabs"] {
-            display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            scrollbar-width: thin;
-            scrollbar-color: #ccc #f5f5f5;
-        }
-        div[data-testid="stTabs"]::-webkit-scrollbar {
-            height: 8px;
-        }
-        div[data-testid="stTabs"]::-webkit-scrollbar-thumb {
-            background-color: #ccc;
-            border-radius: 10px;
-        }
-        div[data-testid="stTabs"]::-webkit-scrollbar-track {
-            background: #f5f5f5;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 tabs = list(image_paths.keys())
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(tabs)
 
