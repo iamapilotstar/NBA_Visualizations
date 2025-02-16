@@ -7,7 +7,7 @@ st.set_page_config(page_title="NBA Shot Prediction - Visuals", layout="wide")
 st.title("🏀 NBA Shot Prediction - Model Insights & Visualizations")
 
 st.markdown(
-            "⬅️ **Swipe left/right to explore more insights** ➡️"
+            "⬅️ **Swipe left/right or using arrow left or right to better explore the tabs** ➡️"
         )
 
 image_paths = {
