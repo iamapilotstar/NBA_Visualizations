@@ -10,6 +10,11 @@ st.markdown(
             "⬅️ **Click on the first tab and then Swipe left/right or use left/right arrow keys to better explore the tabs** ➡️"
         )
 
+st.markdown(
+            "⬇️ **Most insights are below the image so kindly scroll down to view the insights** ⬇️"
+        )
+
+
 image_paths = {
     "Height vs Shot Distance": "Height vs Shot distance.png",
     "Weight vs Shot Distance": "Weight vs Shot distance.png",
