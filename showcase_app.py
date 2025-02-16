@@ -5,7 +5,6 @@ from PIL import Image
 st.set_page_config(page_title="NBA Shot Prediction - Visuals", layout="wide")
 
 st.title("🏀 NBA Shot Prediction - Model Insights & Visualizations")
-st.write(" **Please naviate using Left and Right arrow keys.**")
 
 image_paths = {
     "Height vs Shot Distance": "Height vs Shot distance.png",
@@ -23,15 +22,15 @@ image_paths = {
 }
 
 tabs = list(image_paths.keys())
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12 = st.tabs(tabs)
+tab_objects = st.tabs(tabs)
 
-for tab, key in zip([tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12], image_paths.keys()):
+for tab, key in zip(tab_objects, image_paths.keys()):
     with tab:
         st.subheader(f"📊 {key} Insights")
 
         if os.path.exists(image_paths[key]):
             image = Image.open(image_paths[key])
-            st.image(image, use_container_width=300)
+            st.image(image, use_container_width=True)
         else:
             st.error("⚠️ Image file not found! Please ensure the file exists in the correct directory.")
 
@@ -96,3 +95,8 @@ for tab, key in zip([tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10
             st.write("- **Defensive Strategy:** Teams should focus on forcing opponents into low-percentage situations, pushing them into poor shooting angles, and avoiding situations where the model predicts a clear miss.")
             st.write("- **Offensive Strategy:** Teams should prioritize **high-percentage shots rather than forcing difficult shots**, optimizing shot volume in favorable conditions.")
 
+        # **Navigation Hint**: Displayed at the bottom of each tab to indicate more tabs exist
+        st.markdown(
+            "⬅️ **Swipe left/right to explore more insights** ➡️",
+            unsafe_allow_html=True
+        )
