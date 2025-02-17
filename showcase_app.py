@@ -48,7 +48,7 @@ for tab, key in zip([tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10
             st.write("- **There is a slight positive correlation** between height and shot distance, indicating that taller players have an **efficiency edge near the basket**.")
 
         elif key == "Weight vs Shot Distance":
-            st.write("- **Heavier players generally take shorter shots**, likely due to their dominant presence on the court.")
+            st.write("- **Heavier players also generally take shots closer to the basket**, likely due to their dominant presence on the court.")
             st.write("- **Guards and lighter players tend to take shots from farther away from the basket.** Our analysis also reveals that taller players are naturally heavier.")
             st.write("- **Weight does not strongly influence FG%**, highlighting that **skill and positioning matter more** than physique in basketball.")
 
