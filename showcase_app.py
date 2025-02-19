@@ -98,6 +98,6 @@ for tab, key in zip([tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10
             st.write("- The confusion matrix evaluates **how well the model classifies made and missed shots**.")
             st.write("- **Made shots (Actual - True Positive): 4195**")
             st.write("- **Missed shots (Actual - True Negative): 12532**")
-            st.write("- **Incorrectly Predicted Misses as Makes (False Positives - Type 1 Error): 2145**")
+            st.write("- **Incorrectly Predicted Misses as Make (False Positives - Type 1 Error): 2145**")
             st.write("- **Incorrectly Predicted Make as Misses (False Negatives - Type 2 Error): 8018**")
             st.write("- **Inference:** The model is **better at predicting missed shots**. Teams can leverage these insights to optimize both defensive and offensive strategies.")
